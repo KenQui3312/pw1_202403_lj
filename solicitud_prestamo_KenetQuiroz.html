@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitud de Prestamo Estudiantil</title>
+</head>
+<body>
+    <h1>Solicitud de Prestamo Estudiantil</h1><hr>
+    <form action="solicitud_prestamo_KenetQuiroz.html" method="get">
+        <label for="txtNombre">Nombre completo</label>&nbsp;
+        <input type="text" name="nombreCompleto" id="txtNombre" placeholder="introduzca su nombre completo"><br>
+        <label for="">Dirección de correo electronico</label>&nbsp;
+        <input type="email" name="Correo" id="txtCorreo" placeholder="correo@electro.nico" required><br>
+        <label for="txtTelefono">Número de teléfono</label>&nbsp;
+        <input type="text" name="Telefono" id="txtTelefono" placeholder="33445566"><br>
+        <label for="txtDireccion">Dirección actual</label>&nbsp;
+        <input type="text" name="Direccion" id="txtDireccion" placeholder="Bo.La Nueva Vida, 1 cuadra..."><br>
+        <label for="txtCiudad">Ciudad</label>&nbsp;
+        <input type="text" name="Ciudad" id="txtCiudad" placeholder="Tegucigalpa"><br>
+        <label for="cmbEstado">Estado</label>&nbsp;
+        <select name="Estado" id="cmbEstado">
+            <option value="LC">La Ceiba</option>
+            <option value="CH">Choluteca</option>
+            <option value="TR">Trujillo</option>
+            <option value="CM">Comayagua</option>
+            <option value="SRC">Santa Rosa de Copán</option>
+            <option value="SPS">San Pedro Sula</option>
+            <option value="YU">Yuscarán</option>
+            <option value="TEG">Tegucigalpa</option>
+            <option value="PL">Puerto Lempira</option>
+            <option value="LE">La Esperanza</option>
+            <option value="RT">Roatán</option>
+            <option value="LP">La Paz</option>
+            <option value="GR">Gracias</option>
+            <option value="OC">Ocotepeque</option>
+            <option value="JT">Juticalpa</option>
+            <option value="SB">Santa Bárbara</option>
+            <option value="NC">Nacaome</option>
+            <option value="YR">Yoro</option>
+        </select><br>
+        <label for="">Código postal</label>&nbsp;
+        <input type="text" name="CPostal" id="txtCodigoPostal" placeholder="33102">
+        <br>
+        <label for="">Nivel de educación actual</label>
+        <input type="radio" id="opcPreparatoria" value="preparatoria" name="opcEducacion">
+        <label for="opcPreparatoria">Preparatoria</label>&nbsp;
+        <input type="radio" id="opcLicenciatura" value="licenciatura" name="opcEducacion">
+        <label for="opcLicenciatura">Licenciatura</label>&nbsp;
+        <input type="radio" id="opcMaestria" value="maestria" name="opcEducacion">
+        <label for="opcMaestria">Maestría</label>&nbsp;
+        <input type="radio" id="opcDoctorado" value="doctorado" name="opcEducacion">
+        <label for="opcDoctorado">Doctorado</label>&nbsp;
+        <br>
+        <label for="">Programa de estudio</label>
+        <input type="radio" id="opcICC" value="ciencias_computacion" name="opcProgramaE">
+        <label for="opcICC">Ciencias de la Computación</label>&nbsp;
+        <input type="radio" id="opcIngenieria" value="ingenieria" name="opcProgramaE">
+        <label for="opcIngenieria">Ingeniería</label>&nbsp;
+        <input type="radio" id="opcEconomia" value="economia" name="opcProgramaE">
+        <label for="opcEconomia">Economía</label>&nbsp;
+        <input type="radio" id="opcArtes" value="artes" name="opcProgramaE">
+        <label for="opcArtes">Artes</label>&nbsp;
+        <input type="radio" id="opcOtro" value="otro" name="opcProgramaE">
+        <label for="opcOtro">Otro</label>&nbsp;
+        <br>
+        <label for="txtMonto">Monto del Préstamo</label>&nbsp;
+        <input type="text" name="monto" id="txtMonto" placeholder="10000"><br>
+        <label for="txtRazon">Razón para solicitar el préstamo</label><br>
+        <textarea name="razon" id="txtRazon" placeholder="Necesito el prestamo para..."></textarea><br>
+        <button type="submit" name="btnEnviar" value="btn1">Enviar Datos</button>
+    </form>
+</body>
+</html>

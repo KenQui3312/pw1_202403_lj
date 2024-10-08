@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="forms.html" method="get">
+        <label for="txtNombre">Nombre Completo</label>
+        <input 
+        type="text" 
+        name="txtName" 
+        id="txtNombre" 
+        placeholder="Nombre">
+        <br>
+        <label for="intEdad">Edad</label>
+        <input 
+        type="number"
+        min="1"
+        max="140"
+        name="Edad"
+        placeholder="Edad entre 1 y 140" 
+        id="intEdad">
+        <br>
+        <label for="txtEmail">Correo Electronico</label>
+        <input 
+        type="text"
+        name="" 
+        id=""
+        name="email"
+        itemid="txtEmail"
+        placeholder="correo@electro.nico"
+        required
+        >
+        <br>
+        <label>Opcionews de Color</label>
+        <input 
+        type="radio" id="opcAzul" value="azul" name="opcColor">
+        <label for="opcAzul">Azul</label>
+        &nbsp;
+        <input 
+        type="radio" id="opcRojo" value="rojo" name="opcColor">
+        <label for="opcAzul">Rojo</label>
+        &nbsp;
+        <input 
+        type="radio" id="opcVerde" value="verde" name="opcColor">
+        <label for="opcAzul">Verde</label>
+        &nbsp;
+        <input 
+        type="radio" id="opcAmarillo" value="amarillo" name="opcColor">
+        <label for="opcAzul">Amarillo</label>
+        &nbsp;
+        <br>
+        <label for="cmbCiudad">Ciudades</label>
+        <select name="ciudad" id="cmbCiudad">
+            <option value="TEG">Tegucigalpa</option>
+            <option value="SPS">San Pedro Sula</option>
+            <option value="CHL">Choluteca</option>
+            <option value="LCB">La Ceiba</option>
+            <option value="SRC">Santa Rosa de Copán</option>
+            <option value="SIG">Siguatepeque</option>
+        </select>
+        <br>
+        <label>Intereses</label><br>
+        <input type="checkbox" value="1" name="futbol" id="chkfut">
+        <label for="chkfut">Futbol</label><br>
+        <input type="checkbox" value="2" name="basketball" id="chkbask">
+        <label for="chkbask">Basketball</label><br>
+        <input type="checkbox" value="3" name="baseball" id="chkbase">
+        <label for="chkbase">Baseball</label><br>
+        <input type="checkbox" value="4" name="polo" id="chkpol">
+        <label for="chkpol">Polo</label><br>
+        <br>
+        <label for="txtBiografia">Biografia</label><br>
+        <textarea name="biografia" id="txtBiografia" placeholder="Solo aparece si no hay valor en el campo"></textarea>
+        <br>
+        <button type="submit" name="btnEnviar" value="btn1">Enviar</button>
+        <button type="submit" name="btnRechazar" value="btn2">Rechazar</button>
+
+    </form>
+</body>
+</html>
